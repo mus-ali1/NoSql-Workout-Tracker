@@ -64,3 +64,9 @@ router.put("/api/workouts/:id", (req, res) => {
         res.status(400).json(err);
       });
   });
+
+ //HTML 
+  router.get("/exercise", (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/exercise.html"));
+  });
+  
