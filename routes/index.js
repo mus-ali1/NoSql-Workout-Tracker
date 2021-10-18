@@ -53,3 +53,14 @@ router.put("/api/workouts/:id", (req, res) => {
         res.status(400).json(err);
       });
   });
+
+  router.get("/api/workouts/range", (req, res) => {
+    Workout.Workout.find({})
+      .limit(7)
+      .then((data) => {
+        res.json(data);
+      })
+      .catch((err) => {
+        res.status(400).json(err);
+      });
+  });
