@@ -23,3 +23,33 @@ router.post("/api/workouts", (req,res) => {
         res.status(400).json(err);
     });
 });
+
+router.put("/api/workouts/:id", (req, res) => {
+    const id = req.params.id;
+    const body = req.body;
+  
+    Workout.Workout.findOneAndUpdate({ _id: id }, { $push: { exercises: body } })
+      .then((data) => {
+        res.json(data);
+      })
+      .catch((err) => {
+        res.status(400).json(err);
+      });
+  });
+
+  router.put("/api/workouts/:id", (req, res) => {
+    const id = req.params.id;
+    const body = req.body;
+  
+    Workout.Workout.findOneAndUpdate(
+      { _id: id },
+      { $push: { exercises: body } },
+      { new: true, runValidators: true }
+    )
+      .then((data) => {
+        res.json(data);
+      })
+      .catch((err) => {
+        res.status(400).json(err);
+      });
+  });
