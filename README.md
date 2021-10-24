@@ -10,6 +10,7 @@
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
+ -[link to Deployed](#link-to-deployed)
 - [Application Image](#application-image)
 - [Contributing](#contributing)
 - [Testing](#testing)
@@ -41,6 +42,12 @@ Once the application loads in the browser you can either click the dashboard pag
 
 When adding a new workout be sure to fill in all the input fields and then click complete once done, the application will then add a blank instance of the workout with 0 for the numbers and no string for title/name area.
 
+
+
+## Link to Deployed 
+
+
+[mus-ali1fitness-tracker](https://mus-ali1fitness-tracker.herokuapp.com/)
 
 
 ## Application Image 
