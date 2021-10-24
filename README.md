@@ -47,7 +47,7 @@ When adding a new workout be sure to fill in all the input fields and then click
 ## Link to Deployed 
 
 
-[mus-ali1fitness-tracker](https://mus-ali1fitness-tracker.herokuapp.com/)
+[DEPLOYED APPLICATION](https://mus-ali1fitness-tracker.herokuapp.com/)
 
 
 ## Application Image 
